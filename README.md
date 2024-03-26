@@ -35,3 +35,12 @@ Overall, the history of CBT reflects a progression from behavior-focused interve
 
 # Sample PDFs
 You will have to find your own.
+
+# Local MongoDB setup
+After installing MongoDB tools and stuff, run the following command:
+
+```bash
+atlas deployments setup
+```
+
+More later.

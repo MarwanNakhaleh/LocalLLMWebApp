@@ -19,3 +19,4 @@ class EndpointData:
         self.args = args
 
 context_data = EndpointData("Context", "/context", [])
+upload_document_data = EndpointData("DocumentUpload", "/upload_document", [])

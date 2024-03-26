@@ -47,10 +47,10 @@ def create_chain(vs, model_path):
             splitDocs = splitter.split_documents([document_boi])
             split_texts += splitDocs
 
-        vector_store = vs.create_vector_store("default", split_texts)
+        vector_store = vs.create_vector_store_with_context("default", split_texts)
     else:
         print("data is already in collection, searching now...")
-        vector_store = vs.create_vector_search()
+        vector_store = vs.create_vector_search_with_context()
 
     llm = GPT4All(
         model=model_path,
